@@ -115,9 +115,7 @@ nav a:hover::after {
     transform: translateX(-50%); /* Keeps it centered */
 }
 
-#menu-toggle {
-    display: none;
-}
+
 .menu-label {
     display: none;
     background-color: #ffddd3;
@@ -181,7 +179,7 @@ nav a:hover::after {
     width: 380.55px;
     height: 462.65px;
     position: absolute;
-    z-index: 2;
+ 
     left: 58%;
     top: 40%;
 
@@ -189,7 +187,82 @@ nav a:hover::after {
     transform: translateX(50px); 
     animation: fadeInSlide 1.5s ease-out forwards;
 }
-@media (max-width: 700px) and (max-width: 600px)  {
+
+
+
+/* --------------------------BOOKING APPOINTMENT------------------------------------------- */
+.booking{
+    display: flex;
+    flex-direction: row;
+
+    margin-top:100px;
+    background-color:#f0f0f2;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.booking img{
+    width:50%;
+    height: 50%;
+    animation: fadeInSlide 1.5s ease-out forwards;
+ 
+}
+.form{
+    height: 50%;
+    width:100%;
+}
+.booking h4{
+    color: rgb(97, 97, 97);
+    font-size: 30px;
+    padding: 10px;
+    margin:10px;
+
+}
+.booking p{
+    padding: 10px;
+    margin:10px;
+   
+}
+
+.input{
+    background-color: #fefeff;
+    display: inline;
+    border:1px solid #323232;
+    border-radius: 5px;
+
+    width:330px;
+   height:40px;
+
+   margin: 10px 0px 20px 30px;
+   padding-left: 10px;
+
+}
+
+.input-button{
+    background-color: #fd1c79;
+    color: white;
+    display: inline;
+    border:none;
+    border-radius: 5px;
+
+    width:25%;
+   height:40px;
+
+   float: right;
+   padding-left: 10px;
+   margin: 0px 20px 20px 0px;
+}
+
+.input-button:hover{
+    background-color: #fd1c7aa4;
+
+}
+
+
+@media (max-width: 700px)  {
+    nav a{
+        visibility: hidden;
+    }
+
     .main-banner{
         flex-direction: column;
     }
@@ -238,6 +311,22 @@ nav a:hover::after {
         flex-direction: column;
         align-items: center;
     }
+    .booking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Ensures text alignment is not off */
+    }
+    
+    .booking img {
+        width: 100%;
+    }
+    .input-button{
+        float: none;
+        margin-left: 60px;
+    }
+    
+
 
 }
 
@@ -332,74 +421,6 @@ h3{
 
 
 
-
-
-/* --------------------------BOOKING APPOINTMENT------------------------------------------- */
-.booking{
-    display: flex;
-    flex-direction: row;
-
-    margin-top:100px;
-    background-color:#f0f0f2;
-    font-family: "Josefin Sans", sans-serif;
-
-}
-.booking img{
-    width:50%;
-    height: 50%;
-    animation: fadeInSlide 1.5s ease-out forwards;
- 
-}
-.form{
-    height: 50%;
-    width:100%;
-}
-.booking h4{
-    color: rgb(97, 97, 97);
-    font-size: 30px;
-    padding: 10px;
-    margin:10px;
-
-}
-.booking p{
-    padding: 10px;
-    margin:10px;
-   
-}
-
-.input{
-    background-color: #fefeff;
-    display: inline;
-    border:1px solid #323232;
-    border-radius: 5px;
-
-    width:330px;
-   height:40px;
-
-   margin: 10px 0px 20px 30px;
-   padding-left: 10px;
-
-}
-
-.input-button{
-    background-color: #fd1c79;
-    color: white;
-    display: inline;
-    border:none;
-    border-radius: 5px;
-
-    width:25%;
-   height:40px;
-
-   float: right;
-   padding-left: 10px;
-   margin: 0px 20px 20px 0px;
-}
-
-.input-button:hover{
-    background-color: #fd1c7aa4;
-
-}
 
 
 /* -----------------------------FOOTER DETAILS------------------------------------------------- */
