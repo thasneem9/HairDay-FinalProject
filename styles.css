@@ -258,12 +258,65 @@ nav a:hover::after {
 }
 
 
+
+/* -----------------------------FOOTER DETAILS------------------------------------------------- */
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #ffddd3;
+    gap:20%;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    text-justify: center;
+}
+.col-1{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    padding: 30px;
+
+}
+.col-2{
+    display:flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+}
+.item{
+    padding:5px;
+}
+.location, .mail, .phone, .timing{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+footer #hair-day-logo{
+    width:140px;
+    height:150px;
+}
+.col-2 img{
+    width:20px;
+    height:20px;
+
+}
+.footer-copyright{
+    background-color: #ffddd3;
+ 
+    padding-bottom:20px;
+ 
+
+}
+
+
 @media (max-width: 700px)  {
     nav a{
         visibility: hidden;
     }
 
-    .main-banner{
+   /*  .main-banner{
         flex-direction: column;
     }
     .main-banner h2{
@@ -273,10 +326,10 @@ nav a:hover::after {
 
 
     .column-1{
-        gap:2px;
-        width:35%;
-        margin-left: 0.2%;
-        padding: 29px;
+      
+        width:100%;
+      
+        text-align: center;
       
     }
     .column-1 p{
@@ -286,6 +339,7 @@ nav a:hover::after {
         
         width:150px;
         padding: 9px;
+        margin-left: 30%;
         
     
     }
@@ -298,11 +352,32 @@ nav a:hover::after {
         width: 230.55px;
         height: 352.65px;
 
-        z-index: 2;
         left: 47.5%;
         top: 60%;
 
+    } */
+    .main-banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
+    .column-1 {
+        width: 90%;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .model {
+        position: relative;
+        left: 10%;
+        top: auto;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        border: 12px solid #c489a2;
+    }
+    
     .our-team{
         flex-direction: column;
         align-items: center;
@@ -325,6 +400,59 @@ nav a:hover::after {
         float: none;
         margin-left: 60px;
     }
+
+    
+/* -----------------------------FOOTER DETAILS------------------------------------------------- */
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #ffddd3;
+    gap:1%;
+    font-size: 13px;
+    font-family: "Josefin Sans", sans-serif;
+    text-justify: center;
+}
+.col-1{
+    display:flex;
+    flex-direction: column;
+    width:55%;
+    padding: 10px;
+
+}
+.col-2{
+    display:flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+}
+.item{
+    padding:5px;
+}
+.location, .mail, .phone, .timing{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+footer #hair-day-logo{
+    width:140px;
+    height:150px;
+}
+.col-2 img{
+    width:20px;
+    height:20px;
+
+}
+.footer-copyright{
+    background-color: #ffddd3;
+ 
+    padding-bottom:20px;
+ 
+
+}
+
     
 
 
@@ -422,57 +550,6 @@ h3{
 
 
 
-
-/* -----------------------------FOOTER DETAILS------------------------------------------------- */
-
-.footer{
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    background-color: #ffddd3;
-    gap:20%;
-    font-size: 15px;
-    font-family: "Josefin Sans", sans-serif;
-    text-justify: center;
-}
-.col-1{
-    display:flex;
-    flex-direction: column;
-    width:50%;
-    padding: 30px;
-
-}
-.col-2{
-    display:flex;
-    flex-direction: column;
-
-    padding: 30px;
-
-}
-.item{
-    padding:5px;
-}
-.location, .mail, .phone, .timing{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-}
-footer #hair-day-logo{
-    width:140px;
-    height:150px;
-}
-.col-2 img{
-    width:20px;
-    height:20px;
-
-}
-.footer-copyright{
-    background-color: #ffddd3;
- 
-    padding-bottom:20px;
- 
-
-}
 
 
 /* ---------------------------MEDIA QUERIES------------------------------------------- */
