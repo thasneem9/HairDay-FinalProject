@@ -74,9 +74,6 @@ header>img{
 
 /* --------------------------------NAVBAR-------------------------------------- */
 nav{
-/*     font-family: "Trend HM Sans W00 One" ;
- */    
-
 
  display: flex;
     justify-content: center;
@@ -118,6 +115,19 @@ nav a:hover::after {
     transform: translateX(-50%); /* Keeps it centered */
 }
 
+#menu-toggle {
+    display: none;
+}
+.menu-label {
+    display: none;
+    background-color: #ffddd3;
+    color: black;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
 
 /* ---------------------------MAIN-BANNER------------------------------------------- */
 .main-banner{
@@ -125,7 +135,6 @@ nav a:hover::after {
     flex-direction: row;
     background-color: #ffddd3;
     
-
     position: relative;
 }
 .main-banner h2{
@@ -180,6 +189,57 @@ nav a:hover::after {
     transform: translateX(50px); 
     animation: fadeInSlide 1.5s ease-out forwards;
 }
+@media (max-width: 700px) and (max-width: 600px)  {
+    .main-banner{
+        flex-direction: column;
+    }
+    .main-banner h2{
+        font-size: 35px;
+        line-height:56px;
+    }
+
+
+    .column-1{
+        gap:2px;
+        width:35%;
+        margin-left: 0.2%;
+        padding: 29px;
+      
+    }
+    .column-1 p{
+        font-size: 25px;
+    }
+    .column-1 button{
+        
+        width:150px;
+        padding: 9px;
+        
+    
+    }
+    .column-1 button:hover{
+        background-color: #b10000ab;
+    }
+    
+    .model {
+        border: 10px solid rgb(35, 17, 17);
+        width: 230.55px;
+        height: 352.65px;
+
+        z-index: 2;
+        left: 47.5%;
+        top: 60%;
+
+    }
+    .our-team{
+        flex-direction: column;
+        align-items: center;
+    }
+    .as-seen-in{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 
 @keyframes fadeInSlide {
     from {
@@ -197,6 +257,56 @@ nav a:hover::after {
     height:100px;
     background-color: #faefed;
 }
+
+/* ----------------------------MEET OUR TEAM----------------------------------------------------- */
+
+.our-team{
+    background-color:#ffddd39e;
+    display: flex;
+    justify-content:center;
+  
+    gap:2%;
+ 
+}
+#meet-our-team{
+    width:100%;
+    background-color:#ffddd39e;
+    color:#a67072;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:30px;
+ 
+}
+
+
+.our-team img{
+    height:400px;
+    width:310px;
+    border-radius: 10px;
+   
+}
+.stylist-card{
+    background-color: #faf2ec;
+    width:310px;
+    margin:0px;
+    margin-bottom:50px;
+    text-align: center;
+    margin-top:10px;
+    border-radius: 10px;
+    animation: fadeInSlide 1.5s ease-out forwards;
+    padding: 20px;
+}
+.stylist-card:hover{
+    opacity: 80%;
+}
+#stylist-name{
+    font-weight: bold;
+    font-size: 50px;
+    margin:10px;
+    padding:10px;
+}
+
 
 /* --------------------------AS-SEENIN--------------------------------------------- */
 .as-seen-in{
@@ -291,54 +401,6 @@ h3{
 
 }
 
-/* ----------------------------MEET OUR TEAM----------------------------------------------------- */
-
-.our-team{
-    background-color:#ffddd39e;
-    display: flex;
-    justify-content:center;
-  
-    gap:2%;
- 
-}
-#meet-our-team{
-    width:100%;
-    background-color:#ffddd39e;
-    color:#a67072;
-    font-family: "Josefin Sans", sans-serif;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom:30px;
- 
-}
-
-
-.our-team img{
-    height:400px;
-    width:310px;
-    border-radius: 10px;
-   
-}
-.stylist-card{
-    background-color: #faf2ec;
-    width:310px;
-    margin:0px;
-    margin-bottom:50px;
-    text-align: center;
-    margin-top:10px;
-    border-radius: 10px;
-    animation: fadeInSlide 1.5s ease-out forwards;
-    padding: 20px;
-}
-.stylist-card:hover{
-    opacity: 80%;
-}
-#stylist-name{
-    font-weight: bold;
-    font-size: 50px;
-    margin:10px;
-    padding:10px;
-}
 
 /* -----------------------------FOOTER DETAILS------------------------------------------------- */
 
