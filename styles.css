@@ -103,16 +103,16 @@ nav a::after {
     background-color: rgb(47, 45, 45);
     left: 50%;
     bottom: 0;
-    width: 0; /* Initially hidden */
+    width: 0; 
     height: 1.3px;
     transition: width 0.3s ease, left 0.3s ease;
-    transform: translateX(-50%); /* Centers the underline */
+    transform: translateX(-50%); 
 }
   
 nav a:hover::after {
-    width: 50%; /* Reduce width to make the underline smaller */
+    width: 50%; 
     left: 50%;
-    transform: translateX(-50%); /* Keeps it centered */
+    transform: translateX(-50%);
 }
 
 
@@ -190,273 +190,8 @@ nav a:hover::after {
 
 
 
-/* --------------------------BOOKING APPOINTMENT------------------------------------------- */
-.booking{
-    display: flex;
-    flex-direction: row;
-
-    margin-top:100px;
-    background-color:#f0f0f2;
-    font-family: "Josefin Sans", sans-serif;
-
-}
-.booking img{
-    width:50%;
-    height: 50%;
-    animation: fadeInSlide 1.5s ease-out forwards;
- 
-}
-.form{
-    height: 50%;
-    width:100%;
-}
-.booking h4{
-    color: rgb(97, 97, 97);
-    font-size: 30px;
-    padding: 10px;
-    margin:10px;
-
-}
-.booking p{
-    padding: 10px;
-    margin:10px;
-   
-}
-
-.input{
-    background-color: #fefeff;
-    display: inline;
-    border:1px solid #323232;
-    border-radius: 5px;
-
-    width:330px;
-   height:40px;
-
-   margin: 10px 0px 20px 30px;
-   padding-left: 10px;
-
-}
-
-.input-button{
-    background-color: #fd1c79;
-    color: white;
-    display: inline;
-    border:none;
-    border-radius: 5px;
-
-    width:25%;
-   height:40px;
-
-   float: right;
-   padding-left: 10px;
-   margin: 0px 20px 20px 0px;
-}
-
-.input-button:hover{
-    background-color: #fd1c7aa4;
-
-}
 
 
-
-/* -----------------------------FOOTER DETAILS------------------------------------------------- */
-
-.footer{
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    background-color: #ffddd3;
-    gap:20%;
-    font-size: 15px;
-    font-family: "Josefin Sans", sans-serif;
-    text-justify: center;
-}
-.col-1{
-    display:flex;
-    flex-direction: column;
-    width:50%;
-    padding: 30px;
-
-}
-.col-2{
-    display:flex;
-    flex-direction: column;
-
-    padding: 30px;
-
-}
-.item{
-    padding:5px;
-}
-.location, .mail, .phone, .timing{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-}
-footer #hair-day-logo{
-    width:140px;
-    height:150px;
-}
-.col-2 img{
-    width:20px;
-    height:20px;
-
-}
-.footer-copyright{
-    background-color: #ffddd3;
- 
-    padding-bottom:20px;
- 
-
-}
-
-
-@media (max-width: 700px)  {
-    nav a{
-        visibility: hidden;
-    }
-
-   /*  .main-banner{
-        flex-direction: column;
-    }
-    .main-banner h2{
-        font-size: 35px;
-        line-height:56px;
-    }
-
-
-    .column-1{
-      
-        width:100%;
-      
-        text-align: center;
-      
-    }
-    .column-1 p{
-        font-size: 25px;
-    }
-    .column-1 button{
-        
-        width:150px;
-        padding: 9px;
-        margin-left: 30%;
-        
-    
-    }
-    .column-1 button:hover{
-        background-color: #b10000ab;
-    }
-    
-    .model {
-        border: 10px solid rgb(35, 17, 17);
-        width: 230.55px;
-        height: 352.65px;
-
-        left: 47.5%;
-        top: 60%;
-
-    } */
-    .main-banner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .column-1 {
-        width: 90%;
-        margin: 0;
-        padding: 30px;
-    }
-
-    .model {
-        position: relative;
-        left: 10%;
-        top: auto;
-        width: 80%;
-        height: auto;
-        margin-top: 20px;
-        border: 12px solid #c489a2;
-    }
-    
-    .our-team{
-        flex-direction: column;
-        align-items: center;
-    }
-    .as-seen-in{
-        flex-direction: column;
-        align-items: center;
-    }
-    .booking {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center; /* Ensures text alignment is not off */
-    }
-    
-    .booking img {
-        width: 100%;
-    }
-    .input-button{
-        float: none;
-        margin-left: 60px;
-    }
-
-    
-/* -----------------------------FOOTER DETAILS------------------------------------------------- */
-
-.footer{
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    background-color: #ffddd3;
-    gap:1%;
-    font-size: 13px;
-    font-family: "Josefin Sans", sans-serif;
-    text-justify: center;
-}
-.col-1{
-    display:flex;
-    flex-direction: column;
-    width:55%;
-    padding: 10px;
-
-}
-.col-2{
-    display:flex;
-    flex-direction: column;
-
-    padding: 30px;
-
-}
-.item{
-    padding:5px;
-}
-.location, .mail, .phone, .timing{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-}
-footer #hair-day-logo{
-    width:140px;
-    height:150px;
-}
-.col-2 img{
-    width:20px;
-    height:20px;
-
-}
-.footer-copyright{
-    background-color: #ffddd3;
- 
-    padding-bottom:20px;
- 
-
-}
-
-    
-
-
-}
 
 @keyframes fadeInSlide {
     from {
@@ -549,10 +284,242 @@ h3{
 
 
 
+/* --------------------------BOOKING APPOINTMENT------------------------------------------- */
+.booking{
+    display: flex;
+    flex-direction: row;
+
+    margin-top:100px;
+    background-color:#f0f0f2;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.booking img{
+    width:50%;
+    height: 50%;
+    animation: fadeInSlide 1.5s ease-out forwards;
+ 
+}
+.form{
+    height: 50%;
+    width:100%;
+}
+.booking h4{
+    color: rgb(97, 97, 97);
+    font-size: 30px;
+    padding: 10px;
+    margin:10px;
+
+}
+.booking p{
+    padding: 10px;
+    margin:10px;
+   
+}
+
+.input{
+    background-color: #fefeff;
+    display: inline;
+    border:1px solid #323232;
+    border-radius: 5px;
+
+    width:330px;
+   height:40px;
+
+   margin: 10px 0px 20px 30px;
+   padding-left: 10px;
+
+}
+
+.input-button{
+    background-color: #fd1c79;
+    color: white;
+    display: inline;
+    border:none;
+    border-radius: 5px;
+
+    width:25%;
+   height:40px;
+
+   float: right;
+   padding-left: 10px;
+   margin: 0px 20px 20px 0px;
+}
+
+.input-button:hover{
+    background-color: #fd1c7aa4;
+
+}
+
+
+
+
+/* -----------------------------FOOTER DETAILS------------------------------------------------- */
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #ffddd3;
+    gap:20%;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    text-justify: center;
+}
+.col-1{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    padding: 30px;
+
+}
+.col-2{
+    display:flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+}
+.item{
+    padding:5px;
+}
+.location, .mail, .phone, .timing{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+footer #hair-day-logo{
+    width:140px;
+    height:150px;
+}
+.col-2 img{
+    width:20px;
+    height:20px;
+
+}
+.footer-copyright{
+    background-color: #ffddd3;
+ 
+    padding-bottom:20px;
+ 
+
+}
+
+
 
 
 
 /* ---------------------------MEDIA QUERIES------------------------------------------- */
+
+
+@media (max-width: 700px)  {
+    .promotion-text {
+        text-align: center;
+        font-size: xx-small;
+    }
+    header>img{
+        width:100px;
+        height:130px;
+    }
+    nav a{
+        visibility: hidden;
+    }
+    .main-banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .column-1 {
+        width: 90%;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .model {
+        position: relative;
+        left: 10%;
+        top: auto;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        border: 12px solid #c489a2;
+    }
+    
+    .our-team{
+        flex-direction: column;
+        align-items: center;
+    }
+    .as-seen-in{
+        flex-direction: column;
+        align-items: center;
+    }
+    .booking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Ensures text alignment is not off */
+    }
+    
+    .booking img {
+        width: 100%;
+    }
+    .input-button{
+        float: none;
+        margin-left: 60px;
+    }
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #ffddd3;
+    gap:1%;
+    font-size: 13px;
+    font-family: "Josefin Sans", sans-serif;
+    text-justify: center;
+}
+.col-1{
+    display:flex;
+    flex-direction: column;
+    width:55%;
+    padding: 10px;
+
+}
+.col-2{
+    display:flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+}
+.item{
+    padding:5px;
+}
+.location, .mail, .phone, .timing{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+footer #hair-day-logo{
+    width:140px;
+    height:150px;
+}
+.col-2 img{
+    width:20px;
+    height:20px;
+
+}
+.footer-copyright{
+    background-color: #ffddd3;
+ 
+    padding-bottom:20px;
+ 
+
+}
+
+    
+}
 
 @font-face {
     font-family: "Trend HM Sans W00 One";
@@ -581,15 +548,4 @@ h3{
     url("https://db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.svg#Noyh R W01 SemiLight")format("svg");
-}
-@media screen and (max-width: 600px){
-    .promotion-text {
-        text-align: center;
-        font-size: xx-small;
-    }
-    header>img{
-        width:100px;
-        height:130px;
-    }
-    
 }
