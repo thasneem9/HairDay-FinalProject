@@ -19,7 +19,7 @@
 .promotion-text{
     width:80%;
     margin-left:10%;
-    
+    color: #000000c5;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -28,14 +28,14 @@
     font-weight: bolder;
 }
 .flowerRight{
-    width:10%;
-    height:54px;
+    width:4%;
+    height:53px;
     margin-left:0px;
 
 }
 .flowerLeft{
-    width:10%;
-    height:54px;
+    width:4%;
+    height:52px;
     margin-right: 0px;
 }
 /* -------------------------HEADER---------------------------- */
@@ -139,11 +139,7 @@ nav a:hover::after {
     color: #3a3907;
     font-family: "Guess Sans W00 Bold";
     font-size: 50px;
-  
-    line-height:96px;
-  
-  
-    
+    line-height:96px;  
 }
 .column-1{
     display: flex;
@@ -166,7 +162,7 @@ nav a:hover::after {
     border: none;
     border-radius: 3px;
     padding: 9px;
-    margin: 30px 10px 0px 0px;;
+    margin: 30px 0px 30px 0px;;
 
 }
 .column-1 button:hover{
@@ -218,6 +214,7 @@ nav a:hover::after {
     justify-content:center;
   
     gap:2%;
+
  
 }
 #meet-our-team{
@@ -257,6 +254,10 @@ nav a:hover::after {
     font-size: 50px;
     margin:10px;
     padding:10px;
+    color:#a67072;
+}
+#stylist-info{
+     color:#8d5d5e;;
 }
 
 
@@ -266,6 +267,7 @@ nav a:hover::after {
     background-color: #fff;
     gap:10px;
     justify-content: center;
+
     
 }
 .as-seen-in img{
@@ -413,6 +415,23 @@ footer #hair-day-logo{
 
 
 @media (max-width: 700px)  {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    .flowerRight{
+        width:10%;
+        height:54px;
+        margin-left:0px;
+    
+    }
+    .flowerLeft{
+        width:10%;
+        height:54px;
+        margin-right: 0px;
+    }
+    
+    
     .promotion-text {
         text-align: center;
         font-size: xx-small;
@@ -425,25 +444,45 @@ footer #hair-day-logo{
         visibility: hidden;
     }
     .main-banner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: row;
+    }
+    .main-banner h2{
+        font-size: 35px;
+        line-height:66px;
+      
     }
 
     .column-1 {
-        width: 90%;
-        margin: 0;
-        padding: 30px;
+        gap:9px;
+        width: 350px;
+        margin: 0px;
+        padding: 0px 0px 0px 30px;
+    }
+    .column-1 p{
+        font-family: "Noyh R W01 SemiLight";
+        font-size: 23px;
+        color:#524b2a
+    }
+    .column-1 button{
+        background-color: #b10000;
+        width:39.9%;
+        color:white;
+        border: none;
+        border-radius: 5px;
+        padding: 9px;
+        margin: 30px 0px 30px 0px;
+        font-size: 6px;
+    
     }
 
     .model {
-        position: relative;
-        left: 10%;
-        top: auto;
-        width: 80%;
-        height: auto;
+        position: absolute;
+        left: 57.6%;
+        top: 55%;
+        width: 190px;
+        height: 220px;
         margin-top: 20px;
-        border: 12px solid #c489a2;
+        border: 7px solid #ffffff;
     }
     
     .our-team{
